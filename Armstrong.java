@@ -5,50 +5,32 @@ public class Armstrong
 
 	public static void main(String[] args)
  {
-	    
-            int c=0;
-
-	    int s=0,r=0,m=0,t;
-
 	    Scanner sc=new Scanner(System.in);
 
             System.out.println("enter a number");
 
-	    int n=sc.nextInt();
-
-	    t=n;
-
-	    while(n>0){
-
-	        n=n/10;
-
-		c++;
-
-	    }
-
-	    System.out.println("count = "+c);
-
-	    while(n>0){
-		m=n%10;
-
-		r += Math.pow(m, c);
-
-		n=n/10;
-
-	    }
-
-	    if(t==r){
-
-	        System.out.println("amstrong");
-
-	  }
-
-	  else{
-
-	      System.out.println("not amstrong");
-
-	  }
-
+	    int num = sc.nextInt();
+		int c=0;
+		int t=num;
+		while (num>0){
+		        int k=num%10;
+		            c++;
+		            num=num/10;
+		        }
+		    int sum=0;
+		    int p=t;
+		    while (t>0){
+		        int l=t%10;
+		        sum=sum+(int)Math.pow(l, c);
+		        t=t/10;
+		        
+		    }
+		    if (p==sum){
+		        System.out.println("is armstrong");
+		    }
+		    else{
+		        System.out.println("is not armstrong");
+		    }
     }
 
 }
