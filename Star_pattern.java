@@ -61,21 +61,41 @@ public class Star_pattern
 	}
 }
 
-*/
+
 
 //pyramid
-public class Star_pattern
+public class  Star_pattern
 {
 	public static void main(String[] args) {
 	    int k=5;
 		for(int i=1;i<=k;i++){
-		    for (int l=1;l<=k-i;l++){
-		        System.out.print(" "+" ");
+		    for (int l=1;l<=(k-i)*2;l++){
+		        System.out.print(" ");
 		    }
 		    for (int j=1;j<=(2*i)-1;j++){
 		       System.out.print("*"+" ");
 		    }
 		    System.out.println();
+		}
+	}
+}
+
+
+*/
+
+//Reverse Pyramid
+public class  Star_pattern
+{
+	public static void main(String[] args) {
+		int k=7;
+		for(int i=k;i>=1;i--){
+			for (int l=i;l<k;l++){
+				System.out.print(" ");
+			}
+			for (int j=1;j<=(2*i-1);j++){
+				System.out.print("* ");
+			}
+			System.out.println();
 		}
 	}
 }

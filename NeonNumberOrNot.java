@@ -11,7 +11,7 @@ public class NeonNumberOrNot {
     }
 
     public static void main(String[] args) {
-        int num=8;
+        int num=9;
         if (neon(num)){
             System.out.println(num+" is a Neon Number");
         }

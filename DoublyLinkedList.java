@@ -1,4 +1,4 @@
-class DoublyLinkedList{
+public class DoublyLinkedList{
 
     class Node{
 
@@ -96,7 +96,7 @@ class DoublyLinkedList{
 
 }
 
-public class Main
+class Main
 {
 
 	public static void main(String[] args) {
